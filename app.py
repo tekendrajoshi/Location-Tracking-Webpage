@@ -16,8 +16,23 @@ users = {
     'user1': {
         'password': generate_password_hash('user123'),
         'role': 'user'
+    },
+    # Add more users like this:
+    'user2': {
+        'password': generate_password_hash('user123'),
+        'role': 'user'
+    },
+    
+    'driver2': {
+        'password': generate_password_hash('driver123'),
+        'role': 'driver'
+    }
+     'driver3': {
+        'password': generate_password_hash('driver123'),
+        'role': 'driver'
     }
 }
+
 
 @app.route('/')
 def index():
