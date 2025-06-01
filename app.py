@@ -26,7 +26,7 @@ users = {
     'driver2': {
         'password': generate_password_hash('driver123'),
         'role': 'driver'
-    }
+    },
      'driver3': {
         'password': generate_password_hash('driver123'),
         'role': 'driver'
