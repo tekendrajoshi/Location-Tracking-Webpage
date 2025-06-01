@@ -1,0 +1,23 @@
+<!-- Add this at the beginning of the body (before the nav) -->
+<div id="user-selection" style="text-align: center; padding: 2rem;">
+    <h2>Welcome to Waste Tracker</h2>
+    <p>Please select your role:</p>
+    <button onclick="showSection('map'); document.getElementById('user-selection').style.display = 'none';" 
+            style="padding: 1rem 2rem; margin: 1rem; background: #4CAF50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Normal User
+    </button>
+    <button onclick="window.location.href='/driver'" 
+            style="padding: 1rem 2rem; margin: 1rem; background: #2196F3; color: white; border: none; border-radius: 5px; cursor: pointer;">
+        Driver
+    </button>
+</div>
+
+<!-- Add this style to hide sections initially -->
+<style>
+    .section, nav {
+        display: none;
+    }
+    #user-selection {
+        display: block;
+    }
+</style>
