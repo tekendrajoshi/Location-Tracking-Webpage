@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Waste Tracker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .choice-container {
+            background: white;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            width: 400px;
+            text-align: center;
+        }
+        h1 {
+            color: #4CAF50;
+            margin-bottom: 2rem;
+        }
+        .choice-btn {
+            display: inline-block;
+            padding: 1rem 2rem;
+            margin: 1rem;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 1rem;
+        }
+        .driver-btn {
+            background: #2196F3;
+        }
+        .choice-btn:hover {
+            opacity: 0.9;
+        }
+    </style>
+</head>
+<body>
+    <div class="choice-container">
+        <h1>Waste Tracker System</h1>
+        <a href="{{ url_for('login', role='user') }}" class="choice-btn">Login as Normal User</a>
+        <a href="{{ url_for('login', role='driver') }}" class="choice-btn driver-btn">Login as Driver</a>
+    </div>
+</body>
+</html>
